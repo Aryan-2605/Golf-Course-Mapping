@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Zone.kml</name>
+	<Style id="inline23">
+		<LineStyle>
+			<color>ffffff55</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline25">
+		<LineStyle>
+			<color>ffffff55</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline25</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline23</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Hole 1</name>
+		<styleUrl>#inline8</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-0.220129348207827,51.60584075668193,0 -0.2202990519502457,51.60464212641181,0 -0.220240138081742,51.60422197298754,0 -0.2200741667771222,51.60390196798763,0 -0.2197785157437071,51.60350455046404,0 -0.2195376102548396,51.60293329751271,0 -0.2194454794150824,51.60285887281351,0 -0.2191714492986441,51.60281017604807,0 -0.2190064841685579,51.60291232744995,0 -0.2186894622846036,51.60359472278255,0 -0.2190216120221578,51.60385437810552,0 -0.2192658870618436,51.60431308497207,0 -0.2195597422301021,51.60497661582461,0 -0.2198744346035419,51.60580099109809,0 -0.2199625885847067,51.60588461834045,0 -0.220129348207827,51.60584075668193,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10155"></atom:link>
+	</Placemark>
+</Document>
+</kml>

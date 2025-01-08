@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Tree 3.kml</name>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline35</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline35">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Tree 3</name>
+		<styleUrl>#inline21</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-0.2201013746057723,51.60398427667845,0 -0.220083504678884,51.60397657843316,0 -0.2200818765840851,51.60397752964342,0 -0.2200238591240289,51.6039855681118,0 -0.2199563775634694,51.60399229144419,0 -0.2199547500193699,51.60399323654668,0 -0.219881030860003,51.60400831828959,0 -0.2198509187058928,51.60402288940983,0 -0.2198323529345425,51.60404430529695,0 -0.2198008113412253,51.60407034579015,0 -0.2198515187032746,51.60410895326622,0 -0.2199129687036427,51.60413739431429,0 -0.2199661100772743,51.6041734953602,0 -0.2199937231000926,51.60419182123848,0 -0.2200226210586487,51.60421705620877,0 -0.2199853238878569,51.60424012020669,0 -0.219970943821719,51.60426017719883,0 -0.2199747723037704,51.6042637198995,0 -0.2199966620946603,51.6042873733879,0 -0.2199974331995103,51.60428788239381,0 -0.2200239640653745,51.60429623930482,0 -0.2200627582268577,51.6042984104702,0 -0.2200640678488186,51.60428685407169,0 -0.2201000828544364,51.60427429189015,0 -0.2201026705660414,51.60425261225402,0 -0.2201024617296532,51.60423927648534,0 -0.2200886404937075,51.604229147144,0 -0.2201065793178536,51.60421763983598,0 -0.2201370213691334,51.60422165428034,0 -0.2201763237190779,51.60422731642006,0 -0.2202123915946042,51.60421469136153,0 -0.2201013746057723,51.60398427667845,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10155"></atom:link>
+	</Placemark>
+</Document>
+</kml>

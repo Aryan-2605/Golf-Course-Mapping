@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Tree4.kml</name>
+	<Style id="inline32">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline37">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline32</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline5">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Tree4</name>
+		<styleUrl>#inline37</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-0.2191739058443709,51.60407076234819,0 -0.2192779729140426,51.60397641903146,0 -0.2192338866897714,51.60393560721625,0 -0.2191850469748091,51.60392963481938,0 -0.2191735266840877,51.6039056922973,0 -0.2191732934289226,51.60390499601542,0 -0.2191612450551139,51.60387893179875,0 -0.2191632613705385,51.60387794190153,0 -0.2191938296297125,51.60384275587683,0 -0.2191947215012591,51.60384191530562,0 -0.2191909765863509,51.6037989881838,0 -0.2191717429216899,51.60376965184575,0 -0.2191179931926124,51.60373107782857,0 -0.2190814740652802,51.60369891119511,0 -0.2190502180042808,51.60365333445582,0 -0.2190032266044195,51.60363426243871,0 -0.2189514130545389,51.60359055011606,0 -0.2189181945915086,51.60357884061268,0 -0.2189157073822201,51.60357842660902,0 -0.2188791630067244,51.60358149885385,0 -0.2188472979722633,51.60360205244209,0 -0.218866916362026,51.603690752214,0 -0.2188494996794699,51.60370320580947,0 -0.2190251810610322,51.6038552822924,0 -0.2191739058443709,51.60407076234819,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10155"></atom:link>
+	</Placemark>
+</Document>
+</kml>
