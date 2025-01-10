@@ -17,4 +17,12 @@ if __name__ == '__main__':
     hole2.create_zone()
     hole2.print_map()
 
+    hole3 = HendonGC.add_hole(3, 4, 'HGC/Hole3', 51.59881966272524, -0.21591195114437856)
+    hole3.create_zone()
+    hole3.print_map()
+
+    hole4 = HendonGC.add_hole(4,4, 'HGC/Hole4', 51.59991583429396, -0.2125143980881828)
+    hole4.create_zone()
+    hole4.print_map()
+
     print(HGC.hole1_bunker())
