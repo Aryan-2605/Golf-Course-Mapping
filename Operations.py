@@ -1,9 +1,9 @@
 import xml.etree.ElementTree as ET
 import os
 
-list = os.listdir('HGC\Hole1')
+list = os.listdir('HGC/Hole1')
 print(list)
-print(os.path.join('HGC\Hole1',list[3]))
+print(os.path.join('HGC/Hole1',list[3]))
 
 def kml_splitter(directory):
     kml_file = directory
