@@ -2,6 +2,7 @@ import Operations
 from Operations import *
 import folium
 import os
+import pandas as pd
 
 
 class GolfCourse:
@@ -32,25 +33,26 @@ class Hole:
         self.directory = directory
         self.files = os.listdir(directory)
         self.map = folium.Map(location=[centerX, centerY], zoom_start=18)
+        self.df = pd.DataFrame(columns = ['Area', 'Coordinates'])
 
     def create_zone(self):
-        for name in self.files:
-            path = os.path.join(self.directory, name)
-            coords = Operations.kml_splitter(path)
-            if 'fairway' in name.lower():
-                self.fairway.append(coords)
-            elif 'tree' in name.lower():
-                self.treeline.append(coords)
-            elif 'bunker' in name.lower():
-                self.bunker.append(coords)
-            elif 'zone' in name.lower():
-                self.zone.append(coords)
-            elif 'teebox' in name.lower():
-                self.teebox.append(coords)
-            elif 'green' in name.lower():
-                self.green.append(coords)
-            else:
-                raise ValueError(f'{name} is an invalid .kml file name')
+            for name in self.files:
+                path = os.path.join(self.directory, name)
+                coords = Operations.kml_splitter(path)
+                if 'fairway' in name.lower():
+                    self.fairway.append(coords)
+                elif 'tree' in name.lower():
+                    self.treeline.append(coords)
+                elif 'bunker' in name.lower():
+                    self.bunker.append(coords)
+                elif 'zone' in name.lower():
+                    self.zone.append(coords)
+                elif 'teebox' in name.lower():
+                    self.teebox.append(coords)
+                elif 'green' in name.lower():
+                    self.green.append(coords)
+                else:
+                    raise ValueError(f'{name} is an invalid .kml file name')
 
         #print(self.fairway)
         #print(self.treeline)
@@ -63,7 +65,7 @@ class Hole:
 
         for item in self.zone:
             folium.Polygon(
-                locations=self.zone,
+                locations=item,
                 color='blue',
                 fill=True,
                 fill_opacity=0.5,
@@ -116,7 +118,55 @@ class Hole:
                 popup="Tee Box",
             ).add_to(self.map)
 
-        self.map.save(str(self.number) + '.html')
+        self.map.save(f'Hole {self.number}.html')
+
+
+    def save_to_csv(self):
+        guard = True
+        count = 1
+        while guard:
+            try:
+                if count > 6:
+                    guard = False
+                    break
+                if count == 1:
+                    for item in self.fairway:
+                        self.df.loc[len(self.df)] = ["Fairway", item]
+                        print('Fishied Fairway ' + str(count))
+                    count += 1
+                if count == 2:
+                    for item in self.treeline:
+                        self.df.loc[len(self.df)] = ["TreeLine", item]
+                        print('Fishied TL ' + str(count))
+                    count += 1
+                if count == 3:
+                    for item in self.green:
+                        self.df.loc[len(self.df)] = ["Green", item]
+                        print('Fishied Green ' + str(count))
+                    count += 1
+                if count == 4:
+                    for item in self.bunker:
+                        self.df.loc[len(self.df)] = ["Bunker", item]
+                        print('Fishied Bunker ' + str(count))
+                    count += 1
+                if count == 5:
+                    for item in self.zone:
+                        self.df.loc[len(self.df)] = ["Zone", item]
+                        print('Fishied Zone ' + str(count))
+                    count += 1
+                if count == 6:
+                    for item in self.teebox:
+                        self.df.loc[len(self.df)] = ["TeeBox", item]
+                        print('Fishied TB ' + str(count))
+                    count += 1
+            except Exception as e:
+                print(e)
+                count += 1
+
+        self.df.to_csv(f"Hole {self.number}.csv", index=False)
+
+
+
 
     def __repr__(self):
         return f"Hole(number={self.number}, par={self.par}, zones={len(self.fairway)})"

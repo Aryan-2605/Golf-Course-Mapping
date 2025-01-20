@@ -12,6 +12,7 @@ if __name__ == '__main__':
     hole1 = HendonGC.add_hole(1, 4,'HGC/Hole1', 51.60409972788149, -0.21955174305143066)
     hole1.create_zone()
     hole1.print_map()
+    hole1.save_to_csv()
 
     hole2 = HendonGC.add_hole(2, 4, 'HGC/Hole2', 51.601611471839774, -0.21897208954836292)
     hole2.create_zone()
